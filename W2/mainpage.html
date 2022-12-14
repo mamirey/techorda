@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="mainpage.css">
+    <title> Main page </title>
+    <style>
+
+        .banner {
+            background-image: url("img/background.jpg");
+            /*opacity: .7;*/
+            background-repeat: initial;
+        }
+
+            .banner::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: .7; /*not working((*/
+            }
+
+        p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="logo"><h2>Welcome to Classroom!</h2> </div>
+            <span></span>
+            <div class="sidebar">
+                <nav><a href="#table1">Timetable</a></nav>
+                <nav><a href="#courselist"> Course list</a></nav>
+                <nav><a href="#selfstudy"> SelfStudy</a></nav>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <dialog open="true">
+            Rules:
+            <ol>
+                <li>Respect Your and our time!</li>
+                <li>Try hard and one more!</li>
+                <li>Keep in touch:)</li>
+            </ol>
+
+        </dialog>
+        <main>
+            <aside id="sidebar-quicklinks">
+                <nav class="sidebar-inner">
+                    <div id="courselist">
+                        <header>
+                            <h4 class="sidebar-inner-heading">Courses for you</h4>
+                        </header>
+                        <ul class="sidebar-inner-list">
+                            <li>Web Technology</li>
+                            <ol>
+                                <li>Front-end development</li>
+                                <li>Back-end development</li>
+                            </ol>
+                            <li>Programming language</li>
+                            <li>Data Structure & Algortithms</li>
+                        </ul>
+
+
+                        <dl>
+                            <dt>Data Structure topics</dt>
+                            <dd>Array</dd>
+                            <dd>Linked List</dd>
+                            <dd>Stacks</dd>
+                            <dd>Trees</dd>
+                            <dd>Queues</dd>
+
+                            <dt> Programming Language</dt>
+                            <dd>Java</dd>
+                            <dd>Python</dd>
+                            <dd>C#</dd>
+                        </dl>
+                    </div>
+
+                </nav>
+
+            </aside>
+            <div id="contentMain">
+
+                <section id="table1">
+                    <h4>Your Timetable for this term</h4>
+                    <table id="timetable" border="1">
+                        <caption><b>Term I, 2022</b></caption>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Day</th>
+                                <th colspan="2">Seminar</th>
+                            </tr>
+                            <tr>
+                                <th>Schedule</th>
+                                <th>Topic</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th rowspan="4">Monday</th>
+                                <td rowspan="3">19:00-20:30</td>
+                                <td>Introduction to HTML</td>
+                            </tr>
+                            <tr>
+                                <td>HTML semantic tags</td>
+                            </tr>
+                            <tr>
+                                <td>Lists, caption, details</td>
+                            </tr>
+                            <tr>
+                                <td>21:00-22:30</td>
+                                <td>Practice time</td>
+
+                            </tr>
+                            <tr>
+                                <th rowspan="3">Wednesday</th>
+                                <td>18:00-19:30</td>
+                                <td>Arrays, Lists</td>
+                            </tr>
+                            <tr>
+                                <td>19:30-21:00</td>
+                                <td rowspan="2">XSL transformation </td>
+                            </tr>
+                            <tr>
+                                <td>21:00-22:30</td>
+
+                            </tr>
+                            <tr>
+                                <th rowspan="2">Friday</th>
+                                <td>18:00-19:30</td>
+                                <td>Office Hour</td>
+                            </tr>
+                            <tr>
+                                <td>20:00-21:30</td>
+                                <td>Python Panda, Numpy</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </section>
+
+
+
+
+                <section id="selfstudy">
+                    <h4>Some SelfStudy videos</h4>
+                    <details>
+                        <summary>ПЛАН РАЗВИТИЯ ФРОНТЕНД РАЗРАБОТЧИКА</summary>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yJcCKuxfb2o?start=80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </details>
+                    <details  open>
+                        <summary>HTML, CSS | Верстка сайта с нуля для начинающих</summary>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ltMSrSis9ww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </details>
+
+                </section>
+
+                <section id="somephotos">
+                    <h4>Your Development plan</h4>
+                    <img src="img/1.png" alt="WebP rules." width="600" height="500" />
+
+                    <br />
+                    <section id="code_flex">
+                        <code id="code_flex_inside">
+                            .box {<br />
+                            display: flex;<br />
+                            align-items: stretch;<br />
+                            flex-direction: column; <br />
+                            justify-content: center; <br />
+                            align-items: center;<br />
+                           }
+                        </code>
+                    </section>
+                </section>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <section class="contacts">
+            <h2 style="color:burlywood; font-weight:400; font-size:1.5rem;">Almaty, Element Extra</h2>
+            <ul>
+                Contacts:
+                <li>Email <a href="">uldan4ik@gmail.com</a></li>
+                <li>Phone +77072221552</li>
+
+            </ul>
+
+
+        </section>
+    </footer>
+
+</body>
+
+</html>

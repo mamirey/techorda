@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title> Registration </title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        body {
+            background: #f2f2f2;
+        }
+
+        .content {
+            width: 400px;
+            background: #fff;
+            box-sizing: border-box;
+            max-width: 100%;
+            text-align: center;
+            z-index: 1;
+            margin: 10% auto;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+        }
+
+        fieldset {
+        }
+
+        input:hover {
+            background-color: bisque;
+        }
+
+
+        p, h4 {
+            color: gray;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main class="index">
+        <div class="content">
+            <h2 class="login_text">Welcome to Classroom!</h2>
+            <h4 class="login_text">Register please</h4>
+            <form name="registration" action="login.html">
+                <fieldset>
+                    <input type="email" name="email" placeholder="Email" required />
+                    <br />
+                    <input type="password" name="password"
+                           placeholder="Password" required />
+                </fieldset>
+                <fieldset>
+                    <input type="text" name="firstname" placeholder="First Name" required />
+                    <br />
+                    <input type="text" name="lastname" placeholder="Last Name" required />
+                </fieldset>
+
+                <fieldset>
+                    <label for="rd1"><input type="radio" name="gender" id="rd1" checked>Male</label>
+                    <label for="rd2"><input type="radio" name="gender" id="rd2">Female</label>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <label for="birthday">Date of Birth <input type="date" id="birthday" name="birthday" /></label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="phone">Phone number <input type="tel" id="phone" name="phone" placeholder="+7701 111 11 11"  required></label>
+                </fieldset>
+
+                <fieldset>
+                    <select name="city">
+                        <option> Select your city</option>
+                        <option value="astana">Astana</option>
+                        <option value="almaty">Almaty</option>
+                        <option value="Atyrau">Atyrau</option>
+                        <option value="Aktau">Aktau</option>
+                        <option value="Shymkent">Shymkent</option>
+                        <option value="tald">Taldykorgan</option>
+                        <option value="kostanay">Kostanay</option>
+                        <option value="semey">Semey</option>
+                        <option value="taraz">Taraz</option>
+
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <label for="cb1"><input type="checkbox" id="cb1" checked> I agree with terms and consitions</label>
+
+                    <label for="cb2"> <input type="checkbox" id="cb2" checked> I want to receive the newsletter</label>
+                </fieldset>
+
+                <button type="submit" value="signup" onclick="">Sign Up </button>
+            </form>
+        </div>
+
+    </main>
+
+</body>
+</html>

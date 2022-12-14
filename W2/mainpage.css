@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --firstcolor: #6CBDC3;
+    --headingcolor: #ECF8F9;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+    margin: 0;
+}
+
+h2 {
+    /*text-align: center;
+    color: azure;*/
+}
+
+.logo h2 {
+    color: burlywood;
+}
+
+h4 {
+    color: whitesmoke;
+    line-height: 4;
+    font-size: 1.5em;
+}
+
+.login_text {
+    color: black;
+}
+
+p {
+    color: gray;
+}
+
+/*registration &login pages*/
+main .index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    width: 400px;
+    background: #fff;
+    box-sizing: border-box;
+    max-width: 100%;
+    text-align: center;
+    z-index: 1;
+    margin: 10% auto;
+    padding: 20px;
+}
+
+input {
+    display: block;
+    margin-left: 30%;
+}
+
+    input:hover {
+        background-color: bisque;
+    }
+
+fieldset {
+    border: 0;
+}
+
+label {
+    display: block;
+}
+
+/*end of reg and login page*/
+
+/*Header and sidebar section*/
+header > .header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--firstcolor);
+    gap: 60px;
+}
+
+.header::before, .header::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid grey;
+    margin: auto;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    align-items: center;
+}
+
+nav > a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+    nav > a:hover {
+        color: burlywood;
+        transition-delay: 0.2s;
+    }
+/*end of Header and sidebar section*/
+
+/*main content section*/
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#sidebar-quicklinks {
+    
+    display: flex;
+    flex-direction: column;
+    
+    position: sticky;
+    background-color: var(--firstcolor);
+    /*padding: 1rem;*/
+}
+.sidebar_inner {
+align-self:stretch;
+}
+#courselist {
+    padding: 2rem;
+}
+
+    #courselist > header {
+        font-size: 0.7em;
+    }
+
+    #courselist ul {
+        padding: 0;
+        margin: 0;
+    }
+
+#contentMain {
+    max-width: 100%;
+    /*text-align: center;*/
+    z-index: 1;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 5%;
+}
+
+    #contentMain section {
+        margin-top: 20px;
+    }
+
+#table1, #selfstudy, #courselist {
+    /* margin-top: 7%;*/
+}
+
+
+
+#timetable td {
+    background-color: burlywood;
+    padding: 5px;
+    text-align: center;
+    border: dashed thin var(--firstcolor);
+}
+
+
+
+#timetable {
+    table-layout: fixed;
+    width: 80%;
+    border-collapse: collapse;
+    border: 3px solid var(--firstcolor);
+}
+
+
+dd, dt {
+    line-height: 1.5;
+}
+
+dt {
+    font-weight: bold;
+}
+
+ol {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+#code_flex {
+    border: 1px solid var(--firstcolor);
+    z-index: 1;
+    width: fit-content;
+    height: fit-content;
+    background-color: gainsboro;
+    padding: 1.5rem;
+    margin-bottom: 10%
+}
+/*end of main content section*/
+
+
+
+dialog {
+    offset: top right;
+    left: 80%;
+    position: fixed;
+    background-color: var(--firstcolor);
+}
+/*footer*/
+footer >.contacts {
+background-color:var(--firstcolor);
+margin:0;
+padding:2%;
+}
