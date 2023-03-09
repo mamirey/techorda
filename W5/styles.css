@@ -1,0 +1,61 @@
+body {
+    box-sizing: border-box;
+}
+.container{
+    max-width: 400px;
+margin: 10vh auto 0 auto;
+box-shadow: 0px 0px 10px 10px rgb(104, 74, 74);
+border-radius: 2em;
+
+background-color: black;
+}
+.main{
+    display:flex;
+flex-direction:row;
+justify-content:space-around;
+}
+.display{
+    width: 300px;
+    margin: 15px;
+    text-align: right;
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+    padding: 10px 5px;
+    color: aliceblue;
+    
+
+}
+.btns {
+    width: 70%;
+      
+}
+.btns:nth-last-child(-1){
+flex: 2;
+}
+
+.btns > button,  .operations>button {
+    width: 25%;
+    height: 48px;
+    font-size: 24px;
+    border-radius: 20px;
+    margin:5px;
+    cursor: pointer;
+}
+.operations{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.operations>button{
+ background-color: rgb(213, 134, 48);
+ width: 50%;
+ 
+}
+.bg-gray{
+    background-color: grey;
+}
+.zero{
+    width: 50%;
+}
+
